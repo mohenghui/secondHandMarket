@@ -1,0 +1,308 @@
+三月 25, 2016 4:26:08 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.33 using APR version 1.5.1.
+三月 25, 2016 4:26:08 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+三月 25, 2016 4:26:09 下午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized with version OpenSSL 1.0.1m 19 Mar 2015
+三月 25, 2016 4:26:10 下午 org.apache.coyote.http11.Http11AprProtocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+三月 25, 2016 4:26:10 下午 org.apache.coyote.ajp.AjpAprProtocol init
+信息: Initializing Coyote AJP/1.3 on ajp-8009
+三月 25, 2016 4:26:10 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 3702 ms
+三月 25, 2016 4:26:11 下午 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+三月 25, 2016 4:26:11 下午 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.44
+三月 25, 2016 4:26:11 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+三月 25, 2016 4:26:11 下午 org.apache.catalina.core.StandardContext resourcesStart
+严重: Error starting static Resources
+java.lang.IllegalArgumentException: Document base E:\work\apache-tomcat-6.0.44\webapps\host-manager does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4324)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4493)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:802)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:676)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:602)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:503)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1322)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:325)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1068)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:822)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1060)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:759)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+
+三月 25, 2016 4:26:11 下午 org.apache.catalina.core.StandardContext start
+严重: Error in resourceStart()
+三月 25, 2016 4:26:11 下午 org.apache.catalina.core.StandardContext start
+严重: Error getConfigured
+三月 25, 2016 4:26:11 下午 org.apache.catalina.core.StandardContext start
+严重: Context [/host-manager] startup failed due to previous errors
+三月 25, 2016 4:26:11 下午 org.apache.catalina.core.StandardContext stop
+信息: Container org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/host-manager] has not been started
+三月 25, 2016 4:26:11 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+三月 25, 2016 4:26:11 下午 org.apache.catalina.core.StandardContext resourcesStart
+严重: Error starting static Resources
+java.lang.IllegalArgumentException: Document base E:\work\apache-tomcat-6.0.44\webapps\manager does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4324)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4493)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:802)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:676)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:602)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:503)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1322)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:325)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1068)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:822)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1060)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:759)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+
+三月 25, 2016 4:26:11 下午 org.apache.catalina.core.StandardContext start
+严重: Error in resourceStart()
+三月 25, 2016 4:26:11 下午 org.apache.catalina.core.StandardContext start
+严重: Error getConfigured
+三月 25, 2016 4:26:11 下午 org.apache.catalina.core.StandardContext start
+严重: Context [/manager] startup failed due to previous errors
+三月 25, 2016 4:26:11 下午 org.apache.catalina.core.StandardContext stop
+信息: Container org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/manager] has not been started
+三月 25, 2016 4:26:11 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory wbms
+三月 25, 2016 4:26:26 下午 org.apache.coyote.http11.Http11AprProtocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+三月 25, 2016 4:26:26 下午 org.apache.coyote.ajp.AjpAprProtocol start
+信息: Starting Coyote AJP/1.3 on ajp-8009
+三月 25, 2016 4:26:26 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 15609 ms
+三月 25, 2016 4:39:00 下午 org.apache.coyote.http11.Http11AprProtocol pause
+信息: Pausing Coyote HTTP/1.1 on http-8080
+三月 25, 2016 4:41:01 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.33 using APR version 1.5.1.
+三月 25, 2016 4:41:01 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+三月 25, 2016 4:41:02 下午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized with version OpenSSL 1.0.1m 19 Mar 2015
+三月 25, 2016 4:41:02 下午 org.apache.coyote.http11.Http11AprProtocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+三月 25, 2016 4:41:02 下午 org.apache.coyote.ajp.AjpAprProtocol init
+信息: Initializing Coyote AJP/1.3 on ajp-8009
+三月 25, 2016 4:41:02 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1139 ms
+三月 25, 2016 4:41:02 下午 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+三月 25, 2016 4:41:02 下午 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.44
+三月 25, 2016 4:41:02 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+三月 25, 2016 4:41:02 下午 org.apache.catalina.core.StandardContext resourcesStart
+严重: Error starting static Resources
+java.lang.IllegalArgumentException: Document base E:\work\apache-tomcat-6.0.44\webapps\host-manager does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4324)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4493)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:802)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:676)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:602)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:503)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1322)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:325)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1068)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:822)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1060)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:759)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+
+三月 25, 2016 4:41:02 下午 org.apache.catalina.core.StandardContext start
+严重: Error in resourceStart()
+三月 25, 2016 4:41:02 下午 org.apache.catalina.core.StandardContext start
+严重: Error getConfigured
+三月 25, 2016 4:41:02 下午 org.apache.catalina.core.StandardContext start
+严重: Context [/host-manager] startup failed due to previous errors
+三月 25, 2016 4:41:02 下午 org.apache.catalina.core.StandardContext stop
+信息: Container org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/host-manager] has not been started
+三月 25, 2016 4:41:02 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+三月 25, 2016 4:41:02 下午 org.apache.catalina.core.StandardContext resourcesStart
+严重: Error starting static Resources
+java.lang.IllegalArgumentException: Document base E:\work\apache-tomcat-6.0.44\webapps\manager does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4324)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4493)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:802)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:676)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:602)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:503)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1322)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:325)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1068)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:822)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1060)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:759)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+
+三月 25, 2016 4:41:02 下午 org.apache.catalina.core.StandardContext start
+严重: Error in resourceStart()
+三月 25, 2016 4:41:02 下午 org.apache.catalina.core.StandardContext start
+严重: Error getConfigured
+三月 25, 2016 4:41:02 下午 org.apache.catalina.core.StandardContext start
+严重: Context [/manager] startup failed due to previous errors
+三月 25, 2016 4:41:02 下午 org.apache.catalina.core.StandardContext stop
+信息: Container org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/manager] has not been started
+三月 25, 2016 4:41:02 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory wbms
+三月 25, 2016 4:41:09 下午 org.apache.coyote.http11.Http11AprProtocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+三月 25, 2016 4:41:09 下午 org.apache.coyote.ajp.AjpAprProtocol start
+信息: Starting Coyote AJP/1.3 on ajp-8009
+三月 25, 2016 4:41:09 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 6426 ms
+三月 25, 2016 5:10:02 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.33 using APR version 1.5.1.
+三月 25, 2016 5:10:02 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+三月 25, 2016 5:10:02 下午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized with version OpenSSL 1.0.1m 19 Mar 2015
+三月 25, 2016 5:10:02 下午 org.apache.coyote.http11.Http11AprProtocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+三月 25, 2016 5:10:02 下午 org.apache.coyote.ajp.AjpAprProtocol init
+信息: Initializing Coyote AJP/1.3 on ajp-8009
+三月 25, 2016 5:10:02 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1121 ms
+三月 25, 2016 5:10:02 下午 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+三月 25, 2016 5:10:02 下午 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.44
+三月 25, 2016 5:10:02 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+三月 25, 2016 5:10:02 下午 org.apache.catalina.core.StandardContext resourcesStart
+严重: Error starting static Resources
+java.lang.IllegalArgumentException: Document base E:\work\apache-tomcat-6.0.44\webapps\host-manager does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4324)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4493)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:802)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:676)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:602)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:503)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1322)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:325)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1068)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:822)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1060)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:759)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+
+三月 25, 2016 5:10:02 下午 org.apache.catalina.core.StandardContext start
+严重: Error in resourceStart()
+三月 25, 2016 5:10:03 下午 org.apache.catalina.core.StandardContext start
+严重: Error getConfigured
+三月 25, 2016 5:10:03 下午 org.apache.catalina.core.StandardContext start
+严重: Context [/host-manager] startup failed due to previous errors
+三月 25, 2016 5:10:03 下午 org.apache.catalina.core.StandardContext stop
+信息: Container org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/host-manager] has not been started
+三月 25, 2016 5:10:03 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+三月 25, 2016 5:10:03 下午 org.apache.catalina.core.StandardContext resourcesStart
+严重: Error starting static Resources
+java.lang.IllegalArgumentException: Document base E:\work\apache-tomcat-6.0.44\webapps\manager does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:142)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4324)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4493)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:802)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:779)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:583)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:676)
+	at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:602)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:503)
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1322)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:325)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1068)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:822)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1060)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:463)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:525)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:759)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:595)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+
+三月 25, 2016 5:10:03 下午 org.apache.catalina.core.StandardContext start
+严重: Error in resourceStart()
+三月 25, 2016 5:10:03 下午 org.apache.catalina.core.StandardContext start
+严重: Error getConfigured
+三月 25, 2016 5:10:03 下午 org.apache.catalina.core.StandardContext start
+严重: Context [/manager] startup failed due to previous errors
+三月 25, 2016 5:10:03 下午 org.apache.catalina.core.StandardContext stop
+信息: Container org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/manager] has not been started
+三月 25, 2016 5:10:03 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory wbms
+三月 25, 2016 5:10:08 下午 org.apache.coyote.http11.Http11AprProtocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+三月 25, 2016 5:10:08 下午 org.apache.coyote.ajp.AjpAprProtocol start
+信息: Starting Coyote AJP/1.3 on ajp-8009
+三月 25, 2016 5:10:08 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 5557 ms

@@ -1,0 +1,36 @@
+十月 31, 2015 9:32:59 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: An older version 1.1.32 of the APR based Apache Tomcat Native library is installed, while Tomcat recommends version greater than 1.1.33
+十月 31, 2015 9:32:59 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.32 using APR version 1.5.1.
+十月 31, 2015 9:32:59 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+十月 31, 2015 9:33:00 下午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized with version OpenSSL 1.0.1j 15 Oct 2014
+十月 31, 2015 9:33:00 下午 org.apache.coyote.http11.Http11AprProtocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+十月 31, 2015 9:33:00 下午 org.apache.coyote.ajp.AjpAprProtocol init
+信息: Initializing Coyote AJP/1.3 on ajp-8009
+十月 31, 2015 9:33:00 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1263 ms
+十月 31, 2015 9:33:00 下午 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+十月 31, 2015 9:33:00 下午 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.44
+十月 31, 2015 9:33:00 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+十月 31, 2015 9:33:01 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+十月 31, 2015 9:33:01 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+十月 31, 2015 9:33:01 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+十月 31, 2015 9:33:02 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ifpws
+十月 31, 2015 9:33:02 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+十月 31, 2015 9:33:02 下午 org.apache.coyote.http11.Http11AprProtocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+十月 31, 2015 9:33:03 下午 org.apache.coyote.ajp.AjpAprProtocol start
+信息: Starting Coyote AJP/1.3 on ajp-8009
+十月 31, 2015 9:33:03 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 2161 ms

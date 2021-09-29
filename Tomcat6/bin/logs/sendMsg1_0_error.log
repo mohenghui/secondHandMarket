@@ -1,0 +1,836 @@
+2015 07 16 11:05:05,100: ERROR [com.mchange.v2.resourcepool.BasicResourcePool][com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1]1853 - <A RESOURCE POOL IS PERMANENTLY BROKEN! [com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@717535b6]>
+2015 07 16 11:05:05,102: ERROR [com.mchange.v2.resourcepool.BasicResourcePool][com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2]1853 - <A RESOURCE POOL IS PERMANENTLY BROKEN! [com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@576eeb9]>
+2015 07 16 11:05:05,114: ERROR [com.mchange.v2.resourcepool.BasicResourcePool][com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1]866 - <com.mchange.v2.resourcepool.BasicResourcePool@5057f57f -- Unexpectedly broken!!!>
+com.mchange.v2.resourcepool.ResourcePoolException: Unexpected Break Stack Trace!
+	at com.mchange.v2.resourcepool.BasicResourcePool.unexpectedBreak(BasicResourcePool.java:866)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$1100(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1854)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2015 07 16 11:05:05,178: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-8]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: java.lang.InterruptedException
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1315)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:05,179: ERROR [com.mchange.v2.resourcepool.BasicResourcePool][com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2]866 - <com.mchange.v2.resourcepool.BasicResourcePool@5057f57f -- Unexpectedly broken!!!>
+com.mchange.v2.resourcepool.ResourcePoolException: Unexpected Break Stack Trace!
+	at com.mchange.v2.resourcepool.BasicResourcePool.unexpectedBreak(BasicResourcePool.java:866)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$1100(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1854)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2015 07 16 11:05:05,178: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-4]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: java.lang.InterruptedException
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1315)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:05,180: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-7]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: java.lang.InterruptedException
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1315)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:05,180: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-9]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: java.lang.InterruptedException
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1315)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:05,178: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-3]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: java.lang.InterruptedException
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1315)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:05,180: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-2]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: java.lang.InterruptedException
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1315)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:05,179: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-5]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: java.lang.InterruptedException
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1315)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:05,178: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-1]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: java.lang.InterruptedException
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1315)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:05,179: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-10]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: java.lang.InterruptedException
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1315)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:05,179: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-6]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: java.lang.InterruptedException
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1315)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:557)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:05,213: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-8]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:05,218: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-8]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:05,224: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-8]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.resourcepool.BasicResourcePool.ensureNotBroken(BasicResourcePool.java:1632)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:524)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:05,233: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-3]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:05,235: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-3]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:05,240: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-3]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.resourcepool.BasicResourcePool.ensureNotBroken(BasicResourcePool.java:1632)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:524)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:05,253: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-6]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:05,254: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-6]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:05,259: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-6]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.resourcepool.BasicResourcePool.ensureNotBroken(BasicResourcePool.java:1632)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:524)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:05,276: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-10]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:05,277: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-10]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:05,293: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-1]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:05,294: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-1]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:05,309: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-5]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:05,310: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-5]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:05,327: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-2]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:05,327: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-2]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:05,344: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-9]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:05,345: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-9]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:05,362: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-7]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:05,363: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-7]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:05,370: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-4]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:05,370: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-4]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:05,372: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-6]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:05,373: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-6]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:05,375: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-3]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:05,376: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-3]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:05,379: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-8]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:05,379: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-8]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:09,768: ERROR [com.mchange.v2.resourcepool.BasicResourcePool][com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0]1853 - <A RESOURCE POOL IS PERMANENTLY BROKEN! [com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@17332b63]>
+2015 07 16 11:05:09,768: ERROR [com.mchange.v2.resourcepool.BasicResourcePool][com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0]866 - <com.mchange.v2.resourcepool.BasicResourcePool@5057f57f -- Unexpectedly broken!!!>
+com.mchange.v2.resourcepool.ResourcePoolException: Unexpected Break Stack Trace!
+	at com.mchange.v2.resourcepool.BasicResourcePool.unexpectedBreak(BasicResourcePool.java:866)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$1100(BasicResourcePool.java:32)
+	at com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1854)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+2015 07 16 11:05:10,002: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-10]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.resourcepool.BasicResourcePool.ensureNotBroken(BasicResourcePool.java:1632)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:524)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:10,579: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-10]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:10,579: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-10]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:15,013: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-1]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.resourcepool.BasicResourcePool.ensureNotBroken(BasicResourcePool.java:1632)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:524)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:20,006: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-5]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.resourcepool.BasicResourcePool.ensureNotBroken(BasicResourcePool.java:1632)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:524)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:20,490: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-1]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:20,490: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-1]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:20,490: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-5]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:20,490: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-5]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:25,010: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-2]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.resourcepool.BasicResourcePool.ensureNotBroken(BasicResourcePool.java:1632)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:524)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:25,010: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-2]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:25,010: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-2]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:30,012: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-9]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.resourcepool.BasicResourcePool.ensureNotBroken(BasicResourcePool.java:1632)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:524)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:30,012: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-9]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:30,012: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-9]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:35,004: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-7]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.resourcepool.BasicResourcePool.ensureNotBroken(BasicResourcePool.java:1632)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:524)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:35,004: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-7]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:35,004: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-7]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:40,014: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-4]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.resourcepool.BasicResourcePool.ensureNotBroken(BasicResourcePool.java:1632)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:524)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:40,014: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-4]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:40,014: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-4]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:45,009: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-6]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.resourcepool.BasicResourcePool.ensureNotBroken(BasicResourcePool.java:1632)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:524)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:45,009: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-6]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:45,009: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-6]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:50,002: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-3]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.resourcepool.BasicResourcePool.ensureNotBroken(BasicResourcePool.java:1632)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:524)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:50,002: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-3]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:50,002: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-3]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more
+2015 07 16 11:05:55,007: ERROR [com.dz.dao.MsgDao][DefaultQuartzScheduler_Worker-8]57 - <²éÑ¯ÒìÍø¶ÌÐÅÊ§°Ü>
+java.sql.SQLException: An SQLException was provoked by the following failure: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:106)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:65)
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:62)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:531)
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:128)
+	at com.dz.dao.MsgDao.find(MsgDao.java:40)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: com.mchange.v2.resourcepool.ResourcePoolException: Attempted to use a closed or broken resource pool
+	at com.mchange.v2.resourcepool.BasicResourcePool.ensureNotBroken(BasicResourcePool.java:1632)
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:524)
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:477)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:525)
+	... 6 more
+2015 07 16 11:05:55,007: ERROR [org.quartz.core.JobRunShell][DefaultQuartzScheduler_Worker-8]211 - <Job grouplunxunsenmsg.joblunxunsenmsg threw an unhandled Exception: >
+java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+2015 07 16 11:05:55,007: ERROR [org.quartz.core.ErrorLogger][DefaultQuartzScheduler_Worker-8]2185 - <Job (grouplunxunsenmsg.joblunxunsenmsg threw an exception.>
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:213)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:525)
+Caused by: java.lang.NullPointerException
+	at com.dz.dao.MsgDao.find(MsgDao.java:62)
+	at com.dz.timer.SendMsgDifferent.sendMsg(SendMsgDifferent.java:32)
+	at com.dz.timer.SendMsgDifferent.execute(SendMsgDifferent.java:43)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	... 1 more

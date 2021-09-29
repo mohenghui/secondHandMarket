@@ -1,0 +1,34 @@
+2015-7-22 8:47:20 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.1.33 using APR version 1.5.1.
+2015-7-22 8:47:20 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2015-7-22 8:47:20 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized with version OpenSSL 1.0.1m 19 Mar 2015
+2015-7-22 8:47:21 org.apache.coyote.http11.Http11AprProtocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+2015-7-22 8:47:21 org.apache.coyote.ajp.AjpAprProtocol init
+信息: Initializing Coyote AJP/1.3 on ajp-8009
+2015-7-22 8:47:21 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 2716 ms
+2015-7-22 8:47:22 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+2015-7-22 8:47:22 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.44
+2015-7-22 8:47:22 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+2015-7-22 8:47:22 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+2015-7-22 8:47:22 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+2015-7-22 8:47:22 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+2015-7-22 8:47:23 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory gdrdadc
+2015-7-22 8:47:24 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+2015-7-22 8:47:24 org.apache.coyote.http11.Http11AprProtocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+2015-7-22 8:47:24 org.apache.coyote.ajp.AjpAprProtocol start
+信息: Starting Coyote AJP/1.3 on ajp-8009
+2015-7-22 8:47:24 org.apache.catalina.startup.Catalina start
+信息: Server startup in 2901 ms

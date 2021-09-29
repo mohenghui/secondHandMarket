@@ -1,0 +1,16 @@
+2015-8-6 8:43:46 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextInitialized()
+2015-8-6 8:43:46 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextInitialized()
+2015-8-6 8:43:48 org.apache.catalina.core.ApplicationContext log
+信息: Initializing Spring root WebApplicationContext
+2015-8-6 8:43:50 org.apache.catalina.core.ApplicationContext log
+信息: Set web app root system property: 'webapp.root' = [E:\work\apache-tomcat-6.0.44\webapps\gdrdadc\]
+2015-8-6 8:43:50 org.apache.catalina.core.ApplicationContext log
+信息: Initializing log4j from [classpath:log4j.properties]
+2015-8-6 8:45:40 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextInitialized()
+2015-8-6 8:45:40 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextInitialized()
+2015-8-6 8:45:49 org.apache.catalina.core.ApplicationContext log
+信息: Initializing Spring FrameworkServlet 'Dispatcher'

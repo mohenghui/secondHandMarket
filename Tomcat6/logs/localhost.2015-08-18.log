@@ -1,0 +1,16 @@
+八月 18, 2015 10:49:57 上午 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextInitialized()
+八月 18, 2015 10:49:57 上午 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextInitialized()
+八月 18, 2015 10:49:58 上午 org.apache.catalina.core.ApplicationContext log
+信息: Initializing Spring FrameworkServlet 'Dispatcher'
+八月 18, 2015 10:50:06 上午 org.apache.catalina.core.ApplicationContext log
+信息: Initializing Spring root WebApplicationContext
+八月 18, 2015 10:36:59 上午 org.apache.catalina.core.ApplicationContext log
+信息: ContextListener: contextInitialized()
+八月 18, 2015 10:36:59 上午 org.apache.catalina.core.ApplicationContext log
+信息: SessionListener: contextInitialized()
+八月 18, 2015 10:37:00 上午 org.apache.catalina.core.ApplicationContext log
+信息: Initializing Spring FrameworkServlet 'Dispatcher'
+八月 18, 2015 10:37:06 上午 org.apache.catalina.core.ApplicationContext log
+信息: Initializing Spring root WebApplicationContext

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./libs/cordovaplugs.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/cordovaplugs.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
